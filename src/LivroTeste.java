@@ -10,7 +10,7 @@ public class LivroTeste {
         meuLivro.autor = "J. R. Tolkien";
 
         Editora editora1 = new Editora();
-        editora1.nome = "S";
+        //editora1.nome = "S";
         editora1.email = "s@gmail.com";
         meuLivro.editora = editora1;
         meuLivro.aplicarDesconto(0.1);
