@@ -5,24 +5,24 @@ public class LivroTeste {
         Livro meuLivro = new Livro("A arte da guerra", 9.99);
         //meuLivro.nome = "O Hobbit";
 
-        meuLivro.paginas = 521;
-        meuLivro.resumo = "bla bla bla bla bla";
-        meuLivro.autor = "J. R. Tolkien";
+        meuLivro.setPaginas(521);
+        meuLivro.setResumo("Bla bla bla");
+        meuLivro.setAutor("J. R. Tolkien");
 
         Editora editora1 = new Editora();
         //editora1.nome = "S";
         editora1.email = "s@gmail.com";
-        meuLivro.editora = editora1;
-        meuLivro.aplicarDesconto(0.1);
+        meuLivro.setEditora(editora1);
+        meuLivro.aplicarDesconto(0.3);
 
         meuLivro.exibirDados();
 
         Livro livroFavorito = new Livro("É", 9.99);
-        livroFavorito.nome = "O Código Da Vinci";
-        livroFavorito.resumo = "bla bla bla bla bla";
-        livroFavorito.paginas = 500;
+        livroFavorito.setNome("O Código Da Vinci");
+        livroFavorito.setResumo("Bla bla");
+        livroFavorito.setPaginas(500);
 
-        livroFavorito.autor = "Dan Brown";
+        livroFavorito.setAutor("Dan Brown");
 
         livroFavorito.aplicarDesconto(0.25);
 
