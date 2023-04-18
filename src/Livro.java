@@ -6,10 +6,12 @@ public class Livro {
     int paginas;
     String autor;
     Editora editora;
+    TipoCapa tipoCapa;
 
     public Livro(String nome, double preco) {
         this.nome = nome;
         this.preco = preco;
+        tipoCapa = TipoCapa.COMUM;
     }
 
     void exibirDados() {
@@ -18,6 +20,7 @@ public class Livro {
         System.out.println("Preço: " + preco);
         System.out.println("Páginas: " + paginas);
         System.out.println("Autor: " + autor);
+        System.out.println("Capa: "+ tipoCapa);
 
         if (temEditora()){
             System.out.println("Editora:" + editora.nome);
