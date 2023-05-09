@@ -11,19 +11,19 @@ public class LivroTeste {
 
         Editora editora1 = new Editora();
         //editora1.nome = "S";
-        editora1.email = "s@gmail.com";
+        editora1.setEmail("curitia@gmail.com");
         meuLivro.setEditora(editora1);
         meuLivro.aplicarDesconto(0.3);
 
         meuLivro.exibirDados();
 
-        Livro livroFavorito = new Livro("É", 9.99);
+        LivroDigital livroFavorito = new LivroDigital("É", 9.99);
         livroFavorito.setNome("O Código Da Vinci");
         livroFavorito.setResumo("Bla bla");
         livroFavorito.setPaginas(500);
-
+        livroFavorito.setTipoCapa(TipoCapa.DURA);
         livroFavorito.setAutor("Dan Brown");
-
+        livroFavorito.setMarcaDagua("Saaaa");
         livroFavorito.aplicarDesconto(0.25);
 
         livroFavorito.exibirDados();

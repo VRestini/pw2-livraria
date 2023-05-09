@@ -79,7 +79,7 @@ public class Livro {
         System.out.println("Capa: "+ tipoCapa);
 
         if (temEditora()){
-            System.out.println("Editora:" + editora.nome);
+            System.out.println("Editora:" + editora.getNome());
         }
         System.out.println("-------");
     }
