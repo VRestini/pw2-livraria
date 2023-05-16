@@ -1,8 +1,8 @@
-public class Livro {
+public abstract class Livro {
 
     private String nome;
     private String resumo;
-    private double preco;
+    protected double preco;
     private int paginas;
     private String autor;
     private Editora editora;
