@@ -83,13 +83,8 @@ public abstract class Livro {
         }
         System.out.println("-------");
     }
+    abstract void aplicarDesconto(double percentual);
 
-    void aplicarDesconto(double percentual) {
-        if (percentual > 0.3)
-            System.out.println("Desconto não permitido");
-        else
-            preco = preco - (preco * percentual);
-    }
     boolean temEditora(){
         if(editora == null)
             return false;

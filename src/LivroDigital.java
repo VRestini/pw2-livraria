@@ -10,7 +10,7 @@ public class LivroDigital extends  Livro {
         if (percentual > 0.15)
             System.out.println("Desconto não permitido");
         else
-            super.aplicarDesconto( percentual);
+            preco = preco -(preco * percentual);
     }
 
     @Override
