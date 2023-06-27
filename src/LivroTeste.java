@@ -16,7 +16,7 @@ public class LivroTeste {
         editora1.setEmail("curintia@gmail.com");
         meuLivro.setEditora(editora1);
         //meuLivro.aplicarDesconto(0.3);
-        meuLivro.exibirDados();
+        //meuLivro.exibirDados();
         venda.adicionar(meuLivro);
 
 
@@ -29,8 +29,12 @@ public class LivroTeste {
         livroFavorito.setMarcaDagua("Saaaa");
         livroFavorito.aplicarDesconto(0.25);
 
-        livroFavorito.exibirDados();
+        //livroFavorito.exibirDados();
         venda.adicionar(livroFavorito);
+        venda.exibir();
+
+        Vouchers cupons = new Vouchers();
+        cupons.validar("ETEC8");
     }
 
 }
